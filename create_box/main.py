@@ -1,9 +1,16 @@
 """This is the entry point of the program."""
 
 
-def create_box(height, width, character):
-    pass
+def create_box(height, width, char):
+    count = 0
+    end_str = ''
+    while count < height:
+        end_str += char * width + '\n'
+        count += 1
+    print end_str
+    return end_str   
 
 
 if __name__ == '__main__':
     create_box(3, 4, '*')
+    

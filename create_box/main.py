@@ -7,10 +7,8 @@ def create_box(height, width, char):
     while count < height:
         end_str += char * width + '\n'
         count += 1
-    print end_str
     return end_str   
 
 
 if __name__ == '__main__':
     create_box(3, 4, '*')
-    
